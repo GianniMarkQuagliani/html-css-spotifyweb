@@ -21,7 +21,7 @@ body{
 /* Stili per il contenitore principale */
 .container{
     height: calc(100vh - 100px); /* Imposta l'altezza del contenitore in base all'altezza del viewport */
-    background-color: green; /* Colore di sfondo */
+    background-color: green; /* Colore di sfondo */ /* CAMBIARE */
     display: flex; /* Utilizza un layout flessibile */
 }
 
@@ -31,7 +31,7 @@ body{
     width: 250px; /* Larghezza della barra laterale */
     padding-top: 20px; /* Spaziatura in alto */
     padding-left: 20px; /* Spaziatura a sinistra */
-    background-color: blue; /* Colore di sfondo */
+    background-color: blue; /* Colore di sfondo */ /* CAMBIARE */
     color: rgb(163, 163, 163);  /* Colore del testo */
     font-size: 15px; /* Dimensione del carattere */
     display: flex; /* Utilizza un layout flessibile */
@@ -63,7 +63,7 @@ main::-webkit-scrollbar-thumb{
 
 /* Stili per l'elemento di upgrade fisso in basso */
 .upgrade{
-    background-color: red; /* Colore di sfondo */
+    background-color: red; /* Colore di sfondo */ /* CAMBIARE */
     height: 100px; /* Altezza fissa */
     position: fixed; /* Posizione fissa rispetto alla finestra */
     width: calc(100% - 250px); /* Larghezza calcolata sottraendo la larghezza della barra laterale */
@@ -72,13 +72,30 @@ main::-webkit-scrollbar-thumb{
     align-items: center; /* Allinea gli elementi verticalmente al centro */
 }
 
+/* Stili per il pulsante nell'elemento di upgrade */
+.upgrade > button{
+    color: white; /* Colore del testo */
+    height: 50px; /* Altezza del pulsante */
+    width: 250px; /* Larghezza del pulsante */
+    border: 1px solid white; /* Bordo del pulsante */
+    background-color: rgb(8, 11, 18); /* Colore di sfondo */
+    border-radius: 30px; /* Bordo arrotondato */
+}
 
+/* Stili per la barra di navigazione */
+.nav-bar{
+    margin: auto; /* Centra orizzontalmente */
+    margin-top: 120px; /* Spaziatura in alto */
+    display: flex; /* Utilizza un layout flessibile */
+    width: 50%; /* Larghezza della barra di navigazione */
+    justify-content: space-between; /* Spaziatura uniforme tra gli elementi */
+    color: rgb(163, 163, 163); /* Colore del testo */
+}
 
-
-
-
-
-
+/* Stili per gli elementi nella barra di navigazione */
+.nav-bar > div{
+    max-width: calc(100% / 5); /* Larghezza massima per ciascun elemento */
+}
 
 
 
