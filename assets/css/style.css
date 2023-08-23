@@ -15,55 +15,53 @@ body{
 
 
 
-
-.container{
-    height: calc(100vh - 100px);
-    background-color: green;
-    display: flex;
-}
-
+/* Stili per il contenitore principale */
+/* Stili per la barra laterale sinistra */
 .h-side{
-    height: 100%;
-    width: 250px;
-    padding-top: 20px;
-    padding-left: 20px;
-    background-color: blue;
-    color: rgb(163, 163, 163);
-    font-size: 15px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
+    height: 100%; /* Altezza del 100% del contenitore padre */
+    width: 250px; /* Larghezza della barra laterale */
+    padding-top: 20px; /* Spaziatura in alto */
+    padding-left: 20px; /* Spaziatura a sinistra */
+    background-color: blue; /* Colore di sfondo */
+    color: rgb(163, 163, 163); /* Colore del testo */
+    font-size: 15px; /* Dimensione del carattere */
+    display: flex; /* Utilizza un layout flessibile */
+    flex-direction: column; /* Allinea i figli in colonna */
+    position: relative; /* Posizione relativa rispetto al contenitore padre */
+    overflow: hidden; /* Nasconde il contenuto in eccesso */
 }
 
 
+/* Stili per l'area principale */
 main{
-    width: calc(100% - 250px);
-    height: 100%;
-    overflow: auto;
+    width: calc(100% - 250px); /* Imposta la larghezza dell'area principale */
+    height: 100%; /* Altezza del 100% del contenitore padre */
+    overflow: auto; /* Abilita lo scrolling se il contenuto supera l'area visibile */
 }
 
+/* Stili per la barra di scorrimento personalizzata per l'area principale */
 main::-webkit-scrollbar{
-    width: 12px;
+    width: 12px; /* Larghezza della barra di scorrimento */
 }
 
 main::-webkit-scrollbar-track{
-    background-color: #000000;
+    background-color: #000000; /* Colore di sfondo della traccia */
 }
 
 main::-webkit-scrollbar-thumb{
-    background-color: rgb(41, 41, 41);
-    border-radius: 10px;
+    background-color: rgb(41, 41, 41); /* Colore della barra di scorrimento */
+    border-radius: 10px; /* Bordo arrotondato */
 }
 
+/* Stili per l'elemento di upgrade fisso in basso */
 .upgrade{
-    background-color: red;
-    height: 100px;
-    position: fixed;
-    width: calc(100% - 250px);
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    background-color: red; /* Colore di sfondo */
+    height: 100px; /* Altezza fissa */
+    position: fixed; /* Posizione fissa rispetto alla finestra */
+    width: calc(100% - 250px); /* Larghezza calcolata sottraendo la larghezza della barra laterale */
+    display: flex; /* Utilizza un layout flessibile */
+    justify-content: end; /* Allinea gli elementi all'estremità destra */
+    align-items: center; /* Allinea gli elementi verticalmente al centro */
 }
 
 
