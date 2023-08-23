@@ -11,26 +11,34 @@ body{
     font-family: 'Inter Tight', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    /* Imposta l'altezza del corpo in base all'altezza del viewport (altezza della finestra) */
+    height: calc(100vh - 100px); /* Sottrae 100px dall'altezza totale del viewport */
+    background-color: rgb(21, 26, 35); /* Imposta il colore di sfondo */
 }
 
 
 
 /* Stili per il contenitore principale */
+.container{
+    height: calc(100vh - 100px); /* Imposta l'altezza del contenitore in base all'altezza del viewport */
+    background-color: green; /* Colore di sfondo */
+    display: flex; /* Utilizza un layout flessibile */
+}
+
 /* Stili per la barra laterale sinistra */
-.h-side{
+.h-side{ 
     height: 100%; /* Altezza del 100% del contenitore padre */
     width: 250px; /* Larghezza della barra laterale */
     padding-top: 20px; /* Spaziatura in alto */
     padding-left: 20px; /* Spaziatura a sinistra */
     background-color: blue; /* Colore di sfondo */
-    color: rgb(163, 163, 163); /* Colore del testo */
+    color: rgb(163, 163, 163);  /* Colore del testo */
     font-size: 15px; /* Dimensione del carattere */
     display: flex; /* Utilizza un layout flessibile */
     flex-direction: column; /* Allinea i figli in colonna */
     position: relative; /* Posizione relativa rispetto al contenitore padre */
     overflow: hidden; /* Nasconde il contenuto in eccesso */
 }
-
 
 /* Stili per l'area principale */
 main{
