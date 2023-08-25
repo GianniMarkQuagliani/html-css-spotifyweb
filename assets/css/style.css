@@ -28,7 +28,7 @@ body{
     width: 250px; /* Larghezza della barra laterale */
     padding-top: 20px; /* Spaziatura in alto */
     padding-left: 20px; /* Spaziatura a sinistra */
-    background-color: blue; /* Colore di sfondo */ /* CAMBIARE */
+    background-color: rgb(0, 0, 0); /* Colore di sfondo */ /* CAMBIARE */
     color: rgb(163, 163, 163);  /* Colore del testo */
     font-size: 15px; /* Dimensione del carattere */
     display: flex; /* Utilizza un layout flessibile */
@@ -78,6 +78,24 @@ body{
 .playlist-list > div > i{
     font-size: 45px;
     vertical-align: middle;
+}
+
+.bottom{
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    background-color: black;
+}
+
+.bottom > hr{
+    opacity: 0.4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.user{
+    color: white;
+    font-size: 20px;
 }
 .logo{
     width: 65%;
@@ -201,11 +219,11 @@ main::-webkit-scrollbar-thumb{
     .playlist{
         display: none;
     }
-    .side-under > hr{
+    .bottom > hr{
         display: none;
     }     
 
-    .side-under > div > span{
+    .bottom > div > span{
         display: none;
     }
     
