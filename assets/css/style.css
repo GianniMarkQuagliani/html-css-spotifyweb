@@ -18,7 +18,7 @@ body{
 /* Stili per il contenitore principale */
 .container{
     height: calc(100vh - 100px); /* Imposta l'altezza del contenitore in base all'altezza del viewport */
-    background-color: green; /* Colore di sfondo */ /* CAMBIARE */
+    background-color: rgb(21, 26, 35); /* Colore di sfondo */
     display: flex; /* Utilizza un layout flessibile */
 }
 
@@ -37,6 +37,25 @@ body{
     overflow: hidden; /* Nasconde il contenuto in eccesso */
 }
 
+.nav-principale{
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.nav-principale > div > i{
+    font-size: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.playlist > h3{
+    color: white;
+}
+
+.logo{
+    width: 65%;
+    margin-bottom: 20px;
+}
 
 /* Stili per l'area principale */
 main{
@@ -145,10 +164,20 @@ main::-webkit-scrollbar-thumb{
     color: rgb(163, 163, 163);
 }
 
-@media screen and (min-width: 576px){
+@media screen and (max-width: 576px){
     .h-side{
         width: 50px;
     }
+    .nav-principale > div > span{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 576px){
     .col-small-6{
         flex-basis: calc((100% / 12) * 6);
         max-width: calc((100% / 12) * 6);
