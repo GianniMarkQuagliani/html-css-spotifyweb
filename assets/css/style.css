@@ -97,6 +97,7 @@ body{
     color: white;
     font-size: 20px;
 }
+
 .logo{
     width: 65%;
     margin-bottom: 20px;
@@ -125,7 +126,7 @@ main::-webkit-scrollbar-thumb{
 
 /* Stili per l'elemento di upgrade fisso in basso */
 .upgrade{
-    background-color: red; /* Colore di sfondo */ /* CAMBIARE */
+    background-color: rgb(8, 11, 18); /* Colore di sfondo */
     height: 100px; /* Altezza fissa */
     position: fixed; /* Posizione fissa rispetto alla finestra */
     width: calc(100% - 250px); /* Larghezza calcolata sottraendo la larghezza della barra laterale */
@@ -225,6 +226,14 @@ main::-webkit-scrollbar-thumb{
 
     .bottom > div > span{
         display: none;
+    }
+
+    main{
+        width: calc(100% - 50px);
+    }
+
+    .upgrade{
+        width: calc(100% - 50px);
     }
     
 }
