@@ -52,6 +52,33 @@ body{
     color: white;
 }
 
+.playlist-list{
+    margin-top: 10px;
+    height: 200px;
+    overflow: auto;
+}
+
+.playlist-list::-webkit-scrollbar {
+    width: 12px;
+}
+
+.playlist-list::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+.playlist-list::-webkit-scrollbar-thumb {
+    background-color: rgb(41, 41, 41);
+    border-radius: 10px;
+}
+
+.playlist-list > div{
+    margin-bottom: 20px;
+}
+
+.playlist-list > div > i{
+    font-size: 45px;
+    vertical-align: middle;
+}
 .logo{
     width: 65%;
     margin-bottom: 20px;
@@ -172,6 +199,13 @@ main::-webkit-scrollbar-thumb{
         display: none;
     }
     .playlist{
+        display: none;
+    }
+    .side-under > hr{
+        display: none;
+    }     
+
+    .side-under > div > span{
         display: none;
     }
     
