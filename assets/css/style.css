@@ -11,9 +11,6 @@ body{
     font-family: 'Inter Tight', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
-    /* Imposta l'altezza del corpo in base all'altezza del viewport (altezza della finestra) */
-    height: calc(100vh - 100px); /* Sottrae 100px dall'altezza totale del viewport */
-    background-color: rgb(21, 26, 35); /* Imposta il colore di sfondo */
 }
 
 
@@ -39,6 +36,7 @@ body{
     position: relative; /* Posizione relativa rispetto al contenitore padre */
     overflow: hidden; /* Nasconde il contenuto in eccesso */
 }
+
 
 /* Stili per l'area principale */
 main{
@@ -97,9 +95,82 @@ main::-webkit-scrollbar-thumb{
     max-width: calc(100% / 5); /* Larghezza massima per ciascun elemento */
 }
 
+.c-main{
+    width: 95%;
+    margin: auto;
+    border: 1px solid yellow; /* CAMBIARE */
+}
 
+.container-main > div > h1{
+    color: white;
+    margin-top: 35px;
+    margin-left: 10px;
+}
 
+.container-main > div > span{
+    margin-left: 10px;
+    color: rgb(163, 163, 163);
+}
 
+.row{
+    margin-top: 25px;
+    text-align: center;
+    border: 1px solid red;  /* CAMBIARE */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex: 0 0 auto;
+    border: 1px solid black;
+}
+
+.col-extra-small-6{
+    flex-basis: calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+}
+
+.col-large-2 > img{
+    max-width: 93%;
+}
+
+.col-large-2 > h3{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.col-large-2 > span{
+    color: rgb(163, 163, 163);
+}
+
+@media screen and (min-width: 576px){
+    .h-side{
+        width: 50px;
+    }
+    .col-small-6{
+        flex-basis: calc((100% / 12) * 6);
+        max-width: calc((100% / 12) * 6);
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .col-media-4{
+        flex-basis: calc((100% / 12) * 4);
+        max-width: calc((100% / 12) * 4);
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    .col-large-2{
+        flex-basis: calc((100% / 12) * 2);
+        max-width: calc((100% / 12) * 2);
+    }
+    
+}
 
 
 
