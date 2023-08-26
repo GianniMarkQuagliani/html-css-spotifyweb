@@ -303,6 +303,55 @@ a .artista{
     margin: 1.875rem 0 0.3rem;
 }
 
+/* Stili per il contenitore principale del player nel footer */
+footer .player{
+    background-color: #282828;
+    height:5.625rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Stili per i div all'interno del contenitore del player nel footer */
+footer .player>div{
+    height: 100%;
+    display: flex;
+    gap: .625rem;
+    align-items: center;
+    padding: 0 .625rem;
+}
+
+/* Stili per la sezione sinistra del player nel footer */
+footer .sinistra{
+    width: 14.375rem;
+}
+
+/* Stili per l'immagine del brano nella sezione sinistra */
+footer .sinistra img{
+    height: 1.75rem;
+}
+
+/* Stili per il nome del brano */
+footer .nome-brano{
+    font-size: 0.8rem;
+}
+
+/* Stili per il nome dell'artista */
+footer .nome-artista{
+    font-size: 0.7rem;
+    color:#d2d2d2
+}
+
+/* Stili per le icone */
+footer i{
+    color: #7d7f84;
+}
+
+/* Stili per la sezione delle icone nel player */
+footer .icons{
+    display: flex;
+    gap: .625rem;
+    flex-direction: column;
+}
 
 /* Media query per schermi di larghezza massima 576px */
 @media screen and (max-width: 576px){
@@ -351,6 +400,19 @@ a .artista{
     }
     .container2 .card{
         width: calc(100% / 2 - .625rem) ;
+    }
+    footer .sinistra img{
+        height: 2.625rem;
+    }
+    footer .nome-brano{
+        font-size: 0.7rem;
+    }
+    footer .nome-artista{
+        font-size: 0.75rem;
+    }
+    footer .icons{
+        gap: .9375rem;
+        flex-direction: row;
     }
     
 }
