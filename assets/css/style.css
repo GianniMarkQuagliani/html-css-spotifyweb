@@ -353,6 +353,104 @@ footer .icons{
     flex-direction: column;
 }
 
+/* Stili per la sezione "centro" del player nel footer */
+footer .centro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Cambio colore al passaggio del mouse sulle icone */
+footer i:hover{
+    color: lime;
+}
+
+/* Stili per la navigazione nella sezione "centro" */
+footer .nav-centro{
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+/* Stili per le icone nella navigazione */
+footer .nav-centro i{
+    color: white;
+    font-size: 1rem;
+}
+
+/* Stili per l'icona circolare nella navigazione */
+footer .nav-centro .fa-circle-play{
+    font-size: 1.5rem;
+    margin: 0 .3125rem;
+}
+
+/* Stili per la timeline */
+footer .timeline{
+    display: flex;
+    justify-content: center;
+    gap: .3125rem;
+    align-items: baseline;
+    width: 100%;
+}
+
+/* Stili per la barra della timeline */
+footer .timeline .barra{
+    max-width: 26.875rem;
+}
+
+/* Stili per il testo nella timeline */
+footer .timeline span{
+    font-size: 0.6rem;
+}
+
+/* Stili per la barra grigia */
+footer .barra{
+    background-color:#5a5a5a ;
+    flex-grow: 1;
+    height: .3125rem;
+    border-radius: .3125rem;
+}
+
+footer .timeline .barra{
+    max-width: 26.875rem;
+}
+
+footer .destra .barra{
+    max-width: 7.5rem;
+}
+
+/* Stili per la barra verde ascoltata */
+footer .barra .ascoltato{
+    background-color:#c1c1c1;
+    width: 30%;
+    height: 100%;
+    border-radius: .3125rem;
+    position: relative;
+}
+
+/* Mostra la sfera verde al passaggio del mouse sulla barra */
+footer .barra:hover .sfera{
+    display: block;
+}
+
+/* Cambia colore della barra ascoltata al passaggio del mouse */
+footer .centro .barra:hover .ascoltato{
+    background-color: green;
+}
+
+/* Stili per la sfera verde nella barra ascoltata */
+footer .sfera{
+    height: 12px;
+    background-color: #c1c1c1;
+    width: 12px;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    border-radius: 50%;
+    display: none;
+}
+
 /* Media query per schermi di larghezza massima 576px */
 @media screen and (max-width: 576px){
     main {
@@ -431,41 +529,3 @@ footer .icons{
         max-width: 11.25rem ;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer{
-    height: 100px;
-    background-color: rgb(41, 41, 41);
-}
-.container-footer{
-    display: flex;
-    justify-content: space-between;
-    max-height: 100%;
-    padding: 10px;
-    color: rgb(163, 163, 163);
-}
-
-
