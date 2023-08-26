@@ -8,24 +8,26 @@
 /* Stili per il corpo del documento */
 body{
     /* Utilizza diverse famiglie di caratteri come fallback */
-    font-family: 'Inter Tight', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter Tight', 'Open Sans', 'Roboto', sans-serif;
 }
 
+/* Stile per rimuovere i bullet dai list items */
 li{
     list-style: none;
 }
 
+/* Stile per rimuovere la sottolineatura dai link e impostare il colore del testo a bianco */
 a{
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
+/* Stile per quando il mouse passa sopra il link (sottolineatura e enfasi del testo) */
 a:hover{
     text-decoration: underline;
     font-weight: bold;
 }
+
 
 
 /* Stili per il contenitore principale */
@@ -41,7 +43,7 @@ a:hover{
     width: 250px; /* Larghezza della barra laterale */
     padding-top: 20px; /* Spaziatura in alto */
     padding-left: 20px; /* Spaziatura a sinistra */
-    background-color: rgb(0, 0, 0); /* Colore di sfondo */ /* CAMBIARE */
+    background-color: rgb(0, 0, 0); /* Colore di sfondo */
     color: rgb(163, 163, 163);  /* Colore del testo */
     font-size: 15px; /* Dimensione del carattere */
     display: flex; /* Utilizza un layout flessibile */
@@ -50,21 +52,25 @@ a:hover{
     overflow: hidden; /* Nasconde il contenuto in eccesso */
 }
 
+/* Stili per la barra di navigazione principale */
 .nav-principale{
     line-height: 40px;
     margin-bottom: 15px;
 }
 
+/* Stili per il cambiamento di colore e decorazione dei link al passaggio del mouse */
 .nav-principale > div > i{
     font-size: 25px;
     margin-right: 5px;
     vertical-align: middle;
 }
 
+/* Stili per l'intestazione delle playlist */
 .nav-principale div span:hover{
     color: white;
 }
 
+/* Stili per la lista delle playlist con scrollbar personalizzata */
 .nav-principale div span:hover{
     text-decoration: underline;
     font-weight: bold;
@@ -102,6 +108,7 @@ a:hover{
     vertical-align: middle;
 }
 
+/* Stili per il cambiamento di colore e decorazione dei link delle playlist al passaggio del mouse */
 .playlist-list div span:hover{
     color: white;
 }
@@ -111,6 +118,7 @@ a:hover{
     font-weight: bold;
 }
 
+/* Stili per la sezione inferiore */
 .bottom{
     position: absolute;
     width: 80%;
@@ -124,11 +132,13 @@ a:hover{
     margin-bottom: 10px;
 }
 
+/* Stili per le informazioni sull'utente */
 .user{
     color: white;
     font-size: 20px;
 }
 
+/* Stili per il logo */
 .logo{
     width: 65%;
     margin-bottom: 20px;
@@ -157,7 +167,7 @@ main::-webkit-scrollbar-thumb{
 
 /* Stili per l'elemento di upgrade fisso in basso */
 .upgrade{
-    background-color: rgb(8, 11, 18); /* Colore di sfondo */
+    background-color: rgba(0, 0, 0, 0.493); /* Colore di sfondo */
     height: 100px; /* Altezza fissa */
     position: fixed; /* Posizione fissa rispetto alla finestra */
     width: calc(100% - 250px); /* Larghezza calcolata sottraendo la larghezza della barra laterale */
@@ -188,35 +198,23 @@ main::-webkit-scrollbar-thumb{
 
 .nav-bar div span:hover{
     color: white;
+    border-bottom:2px solid lime;
+    padding-bottom: 1rem;
 }
 
-.nav-bar div span:hover{
-    text-decoration: underline;
-    font-weight: bold;
-}
+
 
 /* Stili per gli elementi nella barra di navigazione */
 .nav-bar > div{
     max-width: calc(100% / 5); /* Larghezza massima per ciascun elemento */
 }
 
+/* Stili per il contenuto principale */
 .contenuto-principale{
     padding: 1.25rem;
 }
 
-.container-main > div > h1{
-    color: white;
-    margin-top: 35px;
-    margin-left: 10px;
-}
-
-.container-main > div > span{
-    margin-left: 10px;
-    color: rgb(163, 163, 163);
-}
-
-
-
+/* Stili per il contenitore del secondo container */
 .container2{
     display: flex;
     gap: .625rem;
@@ -224,18 +222,25 @@ main::-webkit-scrollbar-thumb{
     padding-top: 1.25rem;
 }
 
+/* Stili per le card nel secondo container */
 .container2 .card{
     width: calc(100vw / 2 - 3.125rem - .625rem);
     display: flex;
     text-align: center;
 }
+
+/* Stili per l'immagine circolare */
 .container2 .circular img{
     border-radius: 50%;
 }
+
+/* Stili per l'effetto di play al passaggio del mouse */
 .container2 .hover-play{
     position: relative;
     z-index: 1;
 }
+
+/* Stili per l'icona play nella card */
 .container2 .card i{
     font-size: 3.75rem;
     position: absolute;
@@ -243,10 +248,13 @@ main::-webkit-scrollbar-thumb{
     right: calc(50% - 25px);
     display: none;
 }
+
+/* Stili per l'immagine nella card */
 .container2 .card img{
     width: 100%;
 }
 
+/* Stili per l'effetto di play e opacità al passaggio del mouse */
 .container2 .hover-play:hover i{
     display: block;
 }
@@ -254,18 +262,26 @@ main::-webkit-scrollbar-thumb{
 .container2 .hover-play:hover img{
     filter: opacity(30%);
 }
-.button-upgrade:hover{
+
+/* Stili per il pulsante di upgrade al passaggio del mouse */
+.upgrade:hover{
     scale: 1.05;
 }
+
+/* Stili per l'icona play circolare */
 .fa-circle-play{
     font-size: 1.5rem;
     margin: 0 .3125rem;
 }
+
+/* Stili per il sottotitolo */
 .sottotitolo{
     color: #7d7f84;
     font-weight: bold;
 
 }
+
+/* Stili per il titolo */
 .titolo{
     display: block;
     font-weight: bold;
@@ -273,11 +289,14 @@ main::-webkit-scrollbar-thumb{
     padding: .9375rem 0;
 }
 
+/* Stili per l'artista nella card */
 a .artista{
     display: block;
     color:#7d7f84 ;
     padding-bottom: 1.25rem;
 }
+
+/* Stili per il testo importante */
 .text-important{
     font-weight: bold;
     color: white;
@@ -285,7 +304,7 @@ a .artista{
 }
 
 
-
+/* Media query per schermi di larghezza massima 576px */
 @media screen and (max-width: 576px){
     main {
         width: calc(100% - 50px);
@@ -308,7 +327,7 @@ a .artista{
     }
 
     .container2 .card{
-        width: calc(100% / 2 - .625rem) ;
+        width: calc(50% - 10px) ;
     }
 
     .upgrade{
@@ -317,6 +336,7 @@ a .artista{
     
 }
 
+/* Altre media query per adattarsi a diverse dimensioni dello schermo */
 @media all and (max-width:768px) {
     .nav-bar{
         width: 90%;
@@ -325,9 +345,8 @@ a .artista{
     
 }
 
-
 @media  screen and (min-width:552px) {
-    .main .menu-upgrade{
+    .upgrade{
         left: 14.375rem ;
     }
     .container2 .card{
