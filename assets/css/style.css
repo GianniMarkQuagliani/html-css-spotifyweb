@@ -61,6 +61,15 @@ a:hover{
     vertical-align: middle;
 }
 
+.nav-principale div span:hover{
+    color: white;
+}
+
+.nav-principale div span:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .playlist > h3{
     color: white;
 }
@@ -91,6 +100,15 @@ a:hover{
 .playlist-list > div > i{
     font-size: 45px;
     vertical-align: middle;
+}
+
+.playlist-list div span:hover{
+    color: white;
+}
+
+.playlist-list div span:hover{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .bottom{
@@ -160,12 +178,21 @@ main::-webkit-scrollbar-thumb{
 
 /* Stili per la barra di navigazione */
 .nav-bar{
-    margin: auto; /* Centra orizzontalmente */
-    margin-top: 120px; /* Spaziatura in alto */
     display: flex; /* Utilizza un layout flessibile */
-    width: 50%; /* Larghezza della barra di navigazione */
-    justify-content: space-between; /* Spaziatura uniforme tra gli elementi */
+    padding: 8.5rem 0rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 1.5625rem;
+    justify-content: center;
     color: rgb(163, 163, 163); /* Colore del testo */
+}
+
+.nav-bar div span:hover{
+    color: white;
+}
+
+.nav-bar div span:hover{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /* Stili per gli elementi nella barra di navigazione */
@@ -260,6 +287,9 @@ a .artista{
 
 
 @media screen and (max-width: 576px){
+    main {
+        width: calc(100% - 50px);
+    }
     .h-side{
         width: 50px;
     }
@@ -287,6 +317,14 @@ a .artista{
     
 }
 
+@media all and (max-width:768px) {
+    .nav-bar{
+        width: 90%;
+    }
+
+    
+}
+
 
 @media  screen and (min-width:552px) {
     .main .menu-upgrade{
@@ -310,7 +348,7 @@ a .artista{
     }  
     .container2 .card img{
         max-width: 11.25rem ;
-    } 
+    }
 }
 
 
