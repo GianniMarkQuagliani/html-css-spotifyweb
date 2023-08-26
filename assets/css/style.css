@@ -412,12 +412,30 @@ footer .barra{
     border-radius: .3125rem;
 }
 
+/* Imposta la larghezza massima della barra nella sezione timeline */
 footer .timeline .barra{
     max-width: 26.875rem;
 }
 
+/* Imposta la larghezza massima della barra nella sezione destra */
 footer .destra .barra{
     max-width: 7.5rem;
+}
+
+/* Stili per la sezione "destra" del player nel footer */
+footer .destra{
+    width: 14.375rem;
+}
+
+/* Imposta la larghezza massima della barra nella sezione destra */
+footer .destra .barra{
+    max-width: 7.5rem;
+}
+
+/* Stili per le icone nella sezione destra */
+footer .destra i{
+    color: white;
+    font-size: 0.8rem;
 }
 
 /* Stili per la barra verde ascoltata */
