@@ -170,7 +170,7 @@ main::-webkit-scrollbar-thumb{
     background-color: rgba(0, 0, 0, 0.493); /* Colore di sfondo */
     height: 100px; /* Altezza fissa */
     position: fixed; /* Posizione fissa rispetto alla finestra */
-    width: calc(100% - 250px); /* Larghezza calcolata sottraendo la larghezza della barra laterale */
+    width: calc(100% - 242px); /* Larghezza calcolata sottraendo la larghezza della barra laterale */
     display: flex; /* Utilizza un layout flessibile */
     justify-content: end; /* Allinea gli elementi all'estremità destra */
     align-items: center; /* Allinea gli elementi verticalmente al centro */
@@ -264,8 +264,9 @@ main::-webkit-scrollbar-thumb{
 }
 
 /* Stili per il pulsante di upgrade al passaggio del mouse */
-.upgrade:hover{
-    scale: 1.05;
+.upgrade > button:hover{
+    transform: scale(1.05); /* Effetto di ingrandimento */
+    background-color: rgb(8, 11, 25); /* colore di sfondo */
 }
 
 /* Stili per l'icona play circolare */
@@ -469,45 +470,12 @@ footer .sfera{
     display: none;
 }
 
-/* Media query per schermi di larghezza massima 576px */
-@media screen and (max-width: 576px){
-    main {
-        width: calc(100% - 50px);
-    }
-    .h-side{
-        width: 50px;
-    }
-    .nav-principale > div > span{
-        display: none;
-    }
-    .playlist{
-        display: none;
-    }
-    .bottom > hr{
-        display: none;
-    }     
-
-    .bottom > div > span{
-        display: none;
-    }
-
-    .container2 .card{
-        width: calc(50% - 10px) ;
-    }
-
-    .upgrade{
-        width: calc(100% - 50px);
-    }
-    
-}
-
 /* Altre media query per adattarsi a diverse dimensioni dello schermo */
 @media all and (max-width:768px) {
     .nav-bar{
         width: 90%;
     }
 
-    
 }
 
 @media  screen and (min-width:552px) {
@@ -536,14 +504,5 @@ footer .sfera{
 @media screen and (min-width:640px){
     .container2 .card{
         width: calc(100% / 4 - .625rem);
-    }
-}
-
-@media screen and (min-width:878px){
-    .container2 .card{
-        width: calc(100% / 6 - .625rem);
-    }  
-    .container2 .card img{
-        max-width: 11.25rem ;
     }
 }

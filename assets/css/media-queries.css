@@ -1,0 +1,31 @@
+/* Media query per schermi di larghezza massima 576px */
+@media screen and (max-width: 576px){
+    main {
+        width: calc(100% - 50px);
+    }
+    .h-side{
+        width: 50px;
+    }
+    .nav-principale > div > span{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    .bottom > hr{
+        display: none;
+    }     
+
+    .bottom > div > span{
+        display: none;
+    }
+
+    .container2 .card{
+        width: calc(50% - 10px) ;
+    }
+
+    .upgrade{
+        width: calc(100% - 50px);
+    }
+    
+}
