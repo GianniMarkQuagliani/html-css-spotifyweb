@@ -310,6 +310,7 @@ footer .player{
     height:5.625rem;
     display: flex;
     justify-content: space-between;
+    margin-top: auto; /* Aggiunto per rimuovere lo spazio bianco in fondo */  /* MODIFICHE  */
 }
 
 /* Stili per i div all'interno del contenitore del player nel footer */
@@ -319,6 +320,12 @@ footer .player>div{
     gap: .625rem;
     align-items: center;
     padding: 0 .625rem;
+}
+
+/* Spazio tra il player e la barra di progresso */ 
+/* MODIFICHE  */
+footer .player .icons{
+    margin-right: 10px;
 }
 
 /* Stili per la sezione sinistra del player nel footer */
